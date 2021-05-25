@@ -3,7 +3,7 @@
     <div class="container">
 
         <h1 class="title">
-          scrollmagic
+          Portfolio
         </h1>
 
     </div>
