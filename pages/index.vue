@@ -3,8 +3,11 @@
     <div class="container">
 
         <h1 class="title">
-          Portfolio
+          Rodolfo Chávez
         </h1>
+        <h3 class="subtitle">
+          Portfolio
+        </h3>
 
     </div>
     <div class="container2">
@@ -86,10 +89,28 @@ export default {
     'Helvetica Neue',
     Arial,
     sans-serif;
-  display: block;
+  display: flex;
   font-weight: 300;
   font-size: 100px;
   color: #35495e;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-family:
+    'Quicksand',
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  display: flex;
+  font-weight: 300;
+  font-size: 36px;
+  color: #465c74;
   letter-spacing: 1px;
 }
 
