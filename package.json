@@ -13,7 +13,9 @@
     "gsap": "^3.6.1",
     "nuxt": "^2.15.3",
     "scrollmagic": "^2.0.8",
-    "scrollmagic-plugins": "^1.0.8"
+    "scrollmagic-plugins": "^1.0.8",
+    "swiper": "^6.7.0",
+    "vue-awesome-swiper": "^4.1.1"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.0.0",

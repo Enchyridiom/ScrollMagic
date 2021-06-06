@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "MerriweatherSans";
+    src: local("MerriweatherSans"),
+     url(../assets/MerriweatherSans-Bold.ttf) format("truetype");
+}
+
+html {
+    font-family: "MerriweatherSans";
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: local("OpenSans"),
+     url(../assets/OpenSans-Regular.ttf) format("truetype");
+}
+
+html {
+    font-family: "OpenSans";
+}
