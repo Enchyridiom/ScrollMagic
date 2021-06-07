@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'scrollmagic',
+    title: 'Rodolfo Chávez',
     htmlAttrs: {
       lang: 'en'
     },

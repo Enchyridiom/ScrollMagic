@@ -228,6 +228,8 @@ export default {
   background: #02FFA1;
 }
 
+
+
 .peru {
   margin: 0 auto;
   min-height: 100vh;
@@ -286,18 +288,19 @@ export default {
 
 H1{
   font-family: "MerriweatherSans", "San serif";
-  font-size: 80px;
+  font-size: 4.5vw;
   font-weight: 300;
   color: #FFFFFF;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
+
 p{
   font-family: "OpenSans", "San serif";
-  font-size: 18px;
+  font-size: 1vw;
   color: #424242;
-  line-height: 27px;
+  line-height: 1.5vw;
   text-align: justify;
 }
 
