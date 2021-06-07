@@ -36,10 +36,6 @@ Este proyecto se ha llevado a cabo junto la con la diseñadora Andrea Cascallana
       <img :src="'/filmin2.png'" alt="demo">
     </div>
 
-    <div class="test filmin_image">
-      <img :src="'/filmin1.png'" alt="demo">
-    </div>
-
 
 
         <div class="test peru">
