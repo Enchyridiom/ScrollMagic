@@ -111,20 +111,32 @@ Este proyecto se llevó a cabo con el diseñador Antonio Duran y lo que muestro 
     </div>
 
 
-    //TEMPLATE INPUT. HAY QUE MONTARLO
+    //INPUT
+  <div class="test contact">
+    <h2>CONTACTO</h2>
 
-    <div class="test contact">
-      <img :src="'/contact1.png'" alt="demo">
+    <form action="">
+
+    <div class="form_group">
+      <label for="name"></label>
+      <input type="text" name="name" value="" placeholder="Nombre">
+      <input type="text" name="name" value="" placeholder="Email">
     </div>
-
-    <div class="test contact">
-      <img :src="'/contact2.png'" alt="demo">
-    </div>
-
-
-
     
+    <div class="form_group">
+      <label for="message"></label>
+      <input type="message" name="message" value="" placeholder="Deja tu mensaje aquí">
+    </div>
+    
+    <button type="submit" name="myButton">Enviar</button>
+    </form>
+
   </div>
+
+
+ //FINAL MAIN
+  </div>
+
 </template>
 
 <script>
@@ -196,6 +208,12 @@ export default {
 </script>
 <style lang="scss">
 
+/* 
+*{
+  border: 1px solid pink;;
+} */
+
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -223,8 +241,6 @@ export default {
   text-align: center;
   background: #02FFA1;
 }
-
-
 
 .peru {
   margin: 0 auto;
@@ -269,11 +285,11 @@ export default {
 .contact{
   margin: 0 auto;
   min-height: 100vh;
+  background: #EEEEEE;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
-  background: #FFFFFF;
+  text-justify: center;
 }
 
 .fadein{
@@ -284,7 +300,7 @@ export default {
 
 H1{
   font-family: "MerriweatherSans", "San serif";
-  font-size: 4.5vw;
+  font-size: 90px;
   font-weight: 300;
   color: #FFFFFF;
   display: flex;
@@ -292,11 +308,20 @@ H1{
   margin-bottom: 20px;
 }
 
+H2{
+  font-family: "MerriweatherSans", "San serif";
+  font-size: 90px;
+  font-weight: 300;
+  color: #424242;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
 p{
   font-family: "OpenSans", "San serif";
-  font-size: 1vw;
+  font-size: 18px;
   color: #424242;
-  line-height: 1.5vw;
+  line-height: 27px;
   text-align: justify;
 }
 
@@ -306,5 +331,81 @@ p{
 
 .links {
   padding-top: 15px;
+}
+
+
+.form_group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-justify: center;
+}
+
+//Input styles
+
+form {
+	background-color: #EEEEEE;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-justify: center;
+}
+
+button{
+  width: 128px;
+  height: 48px;
+  border: 4px solid #424242;
+  border-radius: 4px;
+  background-color: #424242;
+  color: #EEEEEE;
+  font-family: "MerriweatherSans", "San serif";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  margin: 1rem 11rem 0 0;
+
+}
+
+button:hover{
+    background-color: #9b9b9b;
+    border: 4px solid #9b9b9b;
+    color: #424242;
+  }
+
+
+label {}
+
+input[type="text"]{
+  background-color: transparent;
+  border: 2px solid #424242;
+  border-radius: 4px;
+  color: #424242;
+  width: 596px;
+  height: 48px;
+  padding: 0 0 0 0.5rem;
+  margin: 0 auto;
+  margin: 1rem 0 1rem 0;
+}
+
+input[type="message"]{
+  background-color: transparent;
+  border: 2px solid #424242;
+  border-radius: 4px;
+  color: #424242;
+  width: 596px;
+  height: 254px;
+  padding: 0 0 0 0.5rem;
+  margin: 1rem 0 1rem 0;
+}
+
+textarea{
+  height: 100%;
+  word-break: break-all;
 }
 </style>
