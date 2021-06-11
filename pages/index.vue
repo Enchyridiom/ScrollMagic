@@ -16,9 +16,9 @@ Este proyecto se ha llevado a cabo junto la con la diseñadora Andrea Cascallana
       </span>
     </div>
 
-    <div class="test container">
+<!--     <div class="test container">
       <vue-awesome-swiper></vue-awesome-swiper>
-    </div>
+    </div> -->
 
     <div class="test filmin_image">
       <img :src="'/filmin6.jpg'" alt="demo">
