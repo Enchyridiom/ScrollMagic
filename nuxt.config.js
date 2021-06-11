@@ -29,8 +29,10 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/ScrollMagic.js', mode: 'client' }
+    { src: '~/plugins/ScrollMagic.js', mode: 'client' },
+    { src: '~/plugins/vue-awesome-swiper.js', mode: 'client' }
   ],
+
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

@@ -4,7 +4,7 @@
       <img :src="'/logo.png'" alt="demo">
       
     </div>
-
+    
     <div class="test filmin">
       <span id="">
         <h1>REDISEÑO FILMIN</h1>
@@ -16,24 +16,28 @@ Este proyecto se ha llevado a cabo junto la con la diseñadora Andrea Cascallana
       </span>
     </div>
 
-    <div class="test filmin_image">
-      <img :src="'/filmin6.png'" alt="demo">
-    </div>
-    
-    <div class="test filmin_image">
-      <img :src="'/filmin5.png'" alt="demo">
-    </div>
-    
-    <div class="test filmin_image">
-      <img :src="'/filmin4.png'" alt="demo">
+    <div class="test container">
+      <vue-awesome-swiper></vue-awesome-swiper>
     </div>
 
     <div class="test filmin_image">
-      <img :src="'/filmin3.png'" alt="demo">
+      <img :src="'/filmin6.jpg'" alt="demo">
+    </div>
+    
+    <div class="test filmin_image">
+      <img :src="'/filmin5.jpg'" alt="demo">
+    </div>
+    
+    <div class="test filmin_image">
+      <img :src="'/filmin4.jpg'" alt="demo">
     </div>
 
     <div class="test filmin_image">
-      <img :src="'/filmin2.png'" alt="demo">
+      <img :src="'/filmin3.jpg'" alt="demo">
+    </div>
+
+    <div class="test filmin_image">
+      <img :src="'/filmin2.jpg'" alt="demo">
     </div>
 
 
@@ -50,27 +54,27 @@ El desarrollo de este proyecto parte de la aplicación de distintas tintas espec
     </div>
 
     <div class="test peru_image">
-      <img :src="'/peru6.png'" alt="demo">
+      <img :src="'/peru6.jpg'" alt="demo">
     </div>
     
     <div class="test peru_image">
-      <img :src="'/peru5.png'" alt="demo">
+      <img :src="'/peru5.jpg'" alt="demo">
     </div>
     
     <div class="test peru_image">
-      <img :src="'/peru4.png'" alt="demo">
+      <img :src="'/peru4.jpg'" alt="demo">
     </div>
 
     <div class="test peru_image">
-      <img :src="'/peru3.png'" alt="demo">
+      <img :src="'/peru3.jpg'" alt="demo">
     </div>
 
     <div class="test peru_image">
-      <img :src="'/peru2.png'" alt="demo">
+      <img :src="'/peru2.jpg'" alt="demo">
     </div>
 
     <div class="test peru_image">
-      <img :src="'/peru1.png'" alt="demo">
+      <img :src="'/peru1.jpg'" alt="demo">
     </div>
 
 
@@ -87,27 +91,27 @@ Este proyecto se llevó a cabo con el diseñador Antonio Duran y lo que muestro 
     </div>
 
     <div class="test bocal_image">
-      <img :src="'/bocal6.png'" alt="demo">
+      <img :src="'/bocal6.jpg'" alt="demo">
     </div>
     
     <div class="test bocal_image">
-      <img :src="'/bocal5.png'" alt="demo">
+      <img :src="'/bocal5.jpg'" alt="demo">
     </div>
     
     <div class="test bocal_image">
-      <img :src="'/bocal4.png'" alt="demo">
+      <img :src="'/bocal4.jpg'" alt="demo">
     </div>
 
     <div class="test bocal_image">
-      <img :src="'/bocal3.png'" alt="demo">
+      <img :src="'/bocal3.jpg'" alt="demo">
     </div>
 
     <div class="test bocal_image">
-      <img :src="'/bocal2.png'" alt="demo">
+      <img :src="'/bocal2.jpg'" alt="demo">
     </div>
 
     <div class="test bocal_image">
-      <img :src="'/bocal1.png'" alt="demo">
+      <img :src="'/bocal1.jpg'" alt="demo">
     </div>
 
 
@@ -115,20 +119,15 @@ Este proyecto se llevó a cabo con el diseñador Antonio Duran y lo que muestro 
   <div class="test contact">
     <h2>CONTACTO</h2>
 
-    <form action="">
-
-    <div class="form_group">
-      <label for="name"></label>
-      <input type="text" name="name" value="" placeholder="Nombre">
-      <input type="text" name="name" value="" placeholder="Email">
-    </div>
-    
-    <div class="form_group">
-      <label for="message"></label>
-      <input type="message" name="message" value="" placeholder="Deja tu mensaje aquí">
-    </div>
-    
-    <button type="submit" name="myButton">Enviar</button>
+    <form action="https://formspree.io/f/xzbygdzo" method="post" class="form_group">
+      <label for="name">Nombre</label>
+      <input type="text" name="name" value="" placeholder="Pepito Perez">
+      <label for="Email">Email</label>
+      <input type="text" name="Email" id="email" value="" placeholder="pepitoperez@gmail.com">
+      <label for="message">Mensaje</label>
+      <textarea name="message" cols="30" rows="10" style="resize: none" placeholder="Deja tu mensaje aquí"></textarea>
+      <button type="submit" name="myButton">Enviar</button>
+      
     </form>
 
   </div>
@@ -139,58 +138,15 @@ Este proyecto se llevó a cabo con el diseñador Antonio Duran y lo que muestro 
 
 </template>
 
+
+
 <script>
+import VueAwesomeSwiper from '../components/VueAwesomeSwiper.vue';
 export default {
+  components: { VueAwesomeSwiper },
   mounted() {
     const controller = new this.$scrollmagic.Controller();
 
-
-//ANIMACIONES POR DEFECTO LOURDES
-
-
-    var scene = new this.$scrollmagic.Scene({ triggerElement: ".container2" })
-      // trigger a TweenMax.to tween
-      .setTween("#animate1", 0.5, {
-        backgroundColor: "white",
-        scale: 2.5,
-        rotate: 360,
-      })
-      .addTo(controller);
-
-    var scene2 = new this.$scrollmagic.Scene({
-      triggerElement: ".container3",
-      duration: 300,
-    })
-      // trigger a TweenMax.to tween
-      .setPin("#animate2")
-      // add indicators (requires plugin)
-      //.addIndicators({name: "1 (duration: 300)"})
-      //.setTween("#animate2", 0.5, {backgroundColor: "white"})
-      .addTo(controller);
-
-  
-
-   //PRUEBA DE FADE IN EN TEXTO. RESULTADO: NO FUNCIONA BIEN, HAY QUE DEFINIR MEJOR LOS PARÁMETROS.
-   // ES POSIBLE QUE SE RESUELVA USANDO CSS ADEMÁS DE SCROLLMAGIC 
-
-    var scene2 = new this.$scrollmagic.Scene({
-      triggerElement: ".fadein",
-      reverse: false,
-      triggerHook: 0,
-    })
-
-       .setPin(".fade")
-       .addTo(controller);
-
-  // TERMINAR PRUEBA DE TEXTO FADE IN
-
-
-
-    //PRUEBA DE SECTION WIPES NATURAL. RESULTADO: FUNCIONA BIEN
-    //*****NOTA: COMPROBAR SIEMPRE EL TRIGGER PORQUE PUEDE CAMBIARLO TODO */
-    ///// triggerHook define la posición del trigger, está va desde 0 siendo este el top hasta 1 que sería el botton
-
-    // get all slides
     var slides = document.querySelectorAll("div.test");
 
     // create scene for every slide
@@ -203,6 +159,7 @@ export default {
         //.addIndicators() // add indicators (requires plugin)
         .addTo(controller);
     }
+
   },
 };
 </script>
@@ -311,9 +268,8 @@ H1{
 H2{
   font-family: "MerriweatherSans", "San serif";
   font-size: 90px;
-  font-weight: 300;
   color: #424242;
-  margin-bottom: 100px;
+  margin-bottom: 4rem;
   margin-top: 100px;
 }
 
@@ -337,19 +293,26 @@ p{
 .form_group{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-justify: center;
 }
 
 //Input styles
 
 form {
 	background-color: #EEEEEE;
-  width: 50%;
+  width: 37rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-justify: center;
+}
+
+label{
+  font-family: "MerriweatherSans", "San serif";
+  font-size: 15px;
+  color: #424242;
+  display: flex;
+  align-self: flex-start;
+  margin: 1rem 0 0 0;
+
 }
 
 button{
@@ -368,7 +331,7 @@ button{
   align-items: center;
   justify-content: center;
   align-self: flex-end;
-  margin: 1rem 11rem 0 0;
+  margin: 1rem 0 0 0;
 
 }
 
@@ -382,6 +345,7 @@ button:hover{
 label {}
 
 input[type="text"]{
+  font-family: "MerriweatherSans", "San serif";
   background-color: transparent;
   border: 2px solid #424242;
   border-radius: 4px;
@@ -393,14 +357,15 @@ input[type="text"]{
   margin: 1rem 0 1rem 0;
 }
 
-input[type="message"]{
+textarea{
+  font-family: "MerriweatherSans", "San serif";
   background-color: transparent;
   border: 2px solid #424242;
   border-radius: 4px;
   color: #424242;
   width: 596px;
   height: 254px;
-  padding: 0 0 0 0.5rem;
+  padding: 1rem 0 0 0.5rem;
   margin: 1rem 0 1rem 0;
 }
 
@@ -408,4 +373,13 @@ textarea{
   height: 100%;
   word-break: break-all;
 }
+
+
+
+/* Swiper */
+
+
+
+
+
 </style>
